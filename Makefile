@@ -5,13 +5,13 @@
 all: build
 
 build:
-	docker build -f Dockerfile -t quay.io/bthomass/eda-project:latest .
+	docker build -f Dockerfile -t quay.io/bthomass/ansible-rulebook:latest .
 
 run:
-	docker run -it quay.io/bthomass/eda-project:latest ansible-rulebook --rules hello_events.yml -i inventory.yml
+	docker run -it quay.io/bthomass/ansible-rulebook:latest ansible-rulebook
 
 shell:
-	docker run -it  quay.io/bthomass/eda-project:latest /bin/bash
+	docker run -it  quay.io/bthomass/ansible-rulebook:latest /bin/bash
 
 push:
-	docker push quay.io/bthomass/eda-project:latest
+	docker push quay.io/bthomass/ansible-rulebook:latest
