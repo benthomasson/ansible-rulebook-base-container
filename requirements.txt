@@ -17,6 +17,6 @@ redis==4.1.4
 virtualenv==20.13.4
 ansible-builder==1.0.1
 drools-jpy==0.0.7
-ansible-rulebook==0.8.0
+ansible-rulebook==0.9.3
 aiohttp==3.8.1
 aiokafka==0.7.2
